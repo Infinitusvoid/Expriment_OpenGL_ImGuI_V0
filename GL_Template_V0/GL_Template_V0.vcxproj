@@ -24,6 +24,7 @@
     <ProjectGuid>{383e17c0-f0a1-4adc-97a3-4af76cab7824}</ProjectGuid>
     <RootNamespace>GLTemplateV0</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Expriment_OpenGL_ImGuI_V0</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
