@@ -34,11 +34,7 @@
 // IMPORTANT:
 //  - IMGUI_DEFINE_MATH_OPERATORS must be defined BEFORE imgui.h
 //  - IMGUI_IMPL_OPENGL_LOADER_CUSTOM tells imgui_impl_opengl3.cpp
-//    *not* to use its internal loader (imgui_impl_opengl3_loader.h),
-//    and instead rely on whatever GL loader you already use (GLEW here).
-//
-// This avoids the conflict that causes PFNGLBINDTEXTUREPROC to be undefined
-// when mixing GLEW + ImGui's embedded loader in one translation unit.
+//    to use your GL loader (GLEW) instead of its own loader header.
 //
 #define IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_IMPL_OPENGL_LOADER_CUSTOM
@@ -66,7 +62,7 @@ static void glfw_error_callback(int error, const char* description)
 
 int main()
 {
-    std::cout << "ImGui + OpenGL Template\n";
+    std::cout << "ImGui + OpenGL Template (Docking)\n";
 
     // ---------------------------------------------------------
     // 1. Initialize GLFW and create an OpenGL context
@@ -86,7 +82,7 @@ int main()
     // glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // for macOS
 
     GLFWwindow* window =
-        glfwCreateWindow(1280, 720, "ImGui + OpenGL Example", nullptr, nullptr);
+        glfwCreateWindow(1280, 720, "ImGui + OpenGL Docking Example", nullptr, nullptr);
     if (!window)
     {
         std::cerr << "Failed to create GLFW window\n";
@@ -124,8 +120,9 @@ int main()
 
     // Enable some ImGui features
     io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;   // Keyboard controls
-    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;       // Docking
-    // io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;  // Multi-viewport (optional)
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;       // <--- docking on
+    // If you want detachable OS windows:
+    // io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
 
     // ImGui style
     ImGui::StyleColorsDark();
@@ -169,7 +166,20 @@ int main()
         ImGui::NewFrame();
 
         // -------------------------------------------------
-        // 6.2 (Optional) Main menu bar
+        // 6.2 Create a dockspace that covers the main viewport
+        // -------------------------------------------------
+        //
+        // This line makes the whole window an empty dockspace.
+        // Any window with ImGuiWindowFlags_NoDocking not set
+        // can now be docked / split / rearranged.
+        //
+        if (io.ConfigFlags & ImGuiConfigFlags_DockingEnable)
+        {
+            ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+        }
+
+        // -------------------------------------------------
+        // 6.3 (Optional) Main menu bar
         // -------------------------------------------------
         if (ImGui::BeginMainMenuBar())
         {
@@ -193,10 +203,11 @@ int main()
         }
 
         // -------------------------------------------------
-        // 6.3 Your own main control window
+        // 6.4 Your own main control window (dockable)
         // -------------------------------------------------
         if (show_control_window)
         {
+            // This window is now dockable into the dockspace
             ImGui::Begin("Control Panel", &show_control_window);
 
             ImGui::Text("Hello from ImGui in your GL template!");
@@ -221,7 +232,7 @@ int main()
         }
 
         // -------------------------------------------------
-        // 6.4 Show Dear ImGui demo window (optional)
+        // 6.5 Show Dear ImGui demo window (dockable)
         // -------------------------------------------------
         if (show_demo_window)
         {
@@ -229,7 +240,7 @@ int main()
         }
 
         // -------------------------------------------------
-        // 6.5 Render your OpenGL scene *under* the UI
+        // 6.6 Render your OpenGL scene *under* the UI
         // -------------------------------------------------
         int display_w, display_h;
         glfwGetFramebufferSize(window, &display_w, &display_h);
@@ -251,7 +262,7 @@ int main()
         // For now, we only clear the screen.
 
         // -------------------------------------------------
-        // 6.6 Render ImGui on top of the scene
+        // 6.7 Render ImGui on top of the scene
         // -------------------------------------------------
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
