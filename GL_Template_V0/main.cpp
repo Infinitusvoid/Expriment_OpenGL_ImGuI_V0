@@ -28,13 +28,12 @@
 #include "../External_libs/glm_0_9_9_7/glm/glm/glm.hpp"
 
 // -----------------------------
-// Dear ImGui (docking branch, unity-build style)
+// Dear ImGui (docking + multi-viewport, unity-build style)
 // -----------------------------
 //
-// IMPORTANT:
 //  - IMGUI_DEFINE_MATH_OPERATORS must be defined BEFORE imgui.h
-//  - IMGUI_IMPL_OPENGL_LOADER_CUSTOM tells imgui_impl_opengl3.cpp
-//    to use your GL loader (GLEW) instead of its own loader header.
+//  - IMGUI_IMPL_OPENGL_LOADER_CUSTOM: use our own GL loader (GLEW)
+//    instead of imgui_impl_opengl3_loader.h.
 //
 #define IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_IMPL_OPENGL_LOADER_CUSTOM
@@ -62,7 +61,7 @@ static void glfw_error_callback(int error, const char* description)
 
 int main()
 {
-    std::cout << "ImGui + OpenGL Template (Docking)\n";
+    std::cout << "ImGui + OpenGL Docking + Viewports Example\n";
 
     // ---------------------------------------------------------
     // 1. Initialize GLFW and create an OpenGL context
@@ -82,7 +81,7 @@ int main()
     // glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // for macOS
 
     GLFWwindow* window =
-        glfwCreateWindow(1280, 720, "ImGui + OpenGL Docking Example", nullptr, nullptr);
+        glfwCreateWindow(1280, 720, "ImGui Docking + Viewports", nullptr, nullptr);
     if (!window)
     {
         std::cerr << "Failed to create GLFW window\n";
@@ -118,19 +117,18 @@ int main()
     ImGuiIO& io = ImGui::GetIO();
     (void)io;
 
-    // Enable some ImGui features
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;   // Keyboard controls
-    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;       // <--- docking on
-    // If you want detachable OS windows:
-    // io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;
+    // Enable features
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;    // Keyboard controls
+    io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;        // Docking
+    io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;      // Multi-viewport / multi-window
 
     // ImGui style
     ImGui::StyleColorsDark();
 
-    // Adjust style if multi-viewports are enabled (optional)
+    // When viewports are enabled, tweak style to look nicer across windows
+    ImGuiStyle& style = ImGui::GetStyle();
     if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
     {
-        ImGuiStyle& style = ImGui::GetStyle();
         style.WindowRounding = 0.0f;
         style.Colors[ImGuiCol_WindowBg].w = 1.0f;
     }
@@ -166,20 +164,17 @@ int main()
         ImGui::NewFrame();
 
         // -------------------------------------------------
-        // 6.2 Create a dockspace that covers the main viewport
+        // 6.2 Global dockspace over the main viewport
         // -------------------------------------------------
         //
-        // This line makes the whole window an empty dockspace.
-        // Any window with ImGuiWindowFlags_NoDocking not set
-        // can now be docked / split / rearranged.
+        // This creates the root dockspace. All windows can dock into it
+        // and also be undocked into separate OS windows (because viewports
+        // are enabled).
         //
-        if (io.ConfigFlags & ImGuiConfigFlags_DockingEnable)
-        {
-            ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
-        }
+        ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
 
         // -------------------------------------------------
-        // 6.3 (Optional) Main menu bar
+        // 6.3 Main menu bar
         // -------------------------------------------------
         if (ImGui::BeginMainMenuBar())
         {
@@ -203,14 +198,17 @@ int main()
         }
 
         // -------------------------------------------------
-        // 6.4 Your own main control window (dockable)
+        // 6.4 Your own main control window (dockable + tear-off)
         // -------------------------------------------------
         if (show_control_window)
         {
-            // This window is now dockable into the dockspace
             ImGui::Begin("Control Panel", &show_control_window);
 
-            ImGui::Text("Hello from ImGui in your GL template!");
+            ImGui::Text("Docking + Viewports are ENABLED.");
+            ImGui::Text("Drag this window by its title bar.");
+            ImGui::Text("Dock it inside, or drag it outside the main window\n"
+                "to spawn a separate OS window (move to other screen).");
+
             ImGui::Separator();
 
             ImGui::Text("Background");
@@ -232,7 +230,7 @@ int main()
         }
 
         // -------------------------------------------------
-        // 6.5 Show Dear ImGui demo window (dockable)
+        // 6.5 Show Dear ImGui demo window (also dockable + tear-off)
         // -------------------------------------------------
         if (show_demo_window)
         {
@@ -267,7 +265,13 @@ int main()
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
-        // If using viewports (optional)
+        // -------------------------------------------------
+        // 6.8 Handle multi-viewport windows
+        // -------------------------------------------------
+        //
+        // This is what actually creates and renders the extra OS windows
+        // when you tear off viewports.
+        //
         if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
         {
             GLFWwindow* backup_current_context = glfwGetCurrentContext();
