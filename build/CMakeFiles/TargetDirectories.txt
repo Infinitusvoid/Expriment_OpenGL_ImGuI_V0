@@ -1,0 +1,8 @@
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/CMakeFiles/imgui.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/CMakeFiles/imnodes.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/CMakeFiles/ImGuiNodesExample.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir

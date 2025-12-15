@@ -1,0 +1,11 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Tools/winlibs/winlibs-x86_64_posix_seh_gcc_14_1_0_llvm_8_1_5_mingw_w64ucrt_11_0_1_r1/mingw64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Windows - 6.2.9200 - AMD64
+...

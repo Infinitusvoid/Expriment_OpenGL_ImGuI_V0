@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\bd3c929e818f3d88112772d9c33dd846\imnodes-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\a06972db87e1471bd9a917575e6b5d91\imnodes-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\d7849844926a9a744729d1b2e5d0c5c2\imnodes-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\imnodes-subbuild\CMakeFiles\imnodes-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EB48D8B3-CBDF-3CFD-9468-70DE28B2DDF4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

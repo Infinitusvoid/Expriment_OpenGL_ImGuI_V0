@@ -1,0 +1,3 @@
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imgui-subbuild/CMakeFiles/imgui-populate.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imgui-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imgui-subbuild/CMakeFiles/ZERO_CHECK.dir

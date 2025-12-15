@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/2f2afaf1edc529178641bcddf804b955/glfw-populate.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/db8832a22a41e3323671183a9531ca71/glfw-populate-complete.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-build.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-configure.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-download.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-install.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-mkdir.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-patch.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-test.rule
+C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/glfw-subbuild/CMakeFiles/a1a498317e3ca83c3505d56da214156e/glfw-populate-update.rule

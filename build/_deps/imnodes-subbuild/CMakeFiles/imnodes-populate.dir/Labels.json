@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/imnodes-populate"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/d7849844926a9a744729d1b2e5d0c5c2/imnodes-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/a06972db87e1471bd9a917575e6b5d91/imnodes-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Cosmos/Downloads/ImGuiNodes_CMake_Starter_v3/ImGuiNodes_CMake_Starter_v3/build/_deps/imnodes-subbuild/CMakeFiles/bd3c929e818f3d88112772d9c33dd846/imnodes-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imnodes-populate"
+		],
+		"name" : "imnodes-populate"
+	}
+}

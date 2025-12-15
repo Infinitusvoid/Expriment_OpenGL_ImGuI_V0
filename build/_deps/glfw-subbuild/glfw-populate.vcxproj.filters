@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\a1a498317e3ca83c3505d56da214156e\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\db8832a22a41e3323671183a9531ca71\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\2f2afaf1edc529178641bcddf804b955\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Cosmos\Downloads\ImGuiNodes_CMake_Starter_v3\ImGuiNodes_CMake_Starter_v3\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9DD7C304-CB79-3EDC-858F-3DABB72990C8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
